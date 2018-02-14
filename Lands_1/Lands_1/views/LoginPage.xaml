@@ -1,11 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Lands_1.views.LoginPage">
+             x:Class="Lands_1.views.LoginPage"
+             Title="Login">
     <ContentPage.Content>
         <StackLayout
+         BackgroundColor="Black"
          Padding="10,20,10,5">
             <Label
+                
                 FontSize="Large"
                 FontAttributes="Bold"
                 HorizontalOptions="Center"
@@ -17,35 +20,48 @@
                 WidthRequest="200">
                 
             </Image>
-            <Grid>
+            <Grid
+                Margin="0,20">
                 <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-                <ColumnDefinition Width="2*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
                 </Grid.ColumnDefinitions>
-
-
-            </Grid>
-            <Label
-                Text="E-mail">
+            
+            <Label 
+                Grid.Row="0"
+                Grid.Column="0"
+                Text="E-Mail"
+                TextColor="White">
             </Label>
-            <Entry
-                Keyboard="Email"
-                Placeholder="Enter your E-mail">
-                
-            </Entry>
+
+                <Entry
+               Grid.Row="0"
+               Grid.Column="1"
+               Keyboard="Email"
+                Placeholder="Enter you Email"
+                    TextColor="White"
+                PlaceholderColor="White">
+
+                </Entry>
             <Label
-                Text="Password">
-            </Label>
+                Grid.Row="1"
+                Grid.Column="0"
+                Text="Password"
+                    TextColor="White">
+                </Label>
             <Entry
+                Grid.Row="1"
+                Grid.Column="1"
                 IsPassword="True"
-               
-                Placeholder="Enter your Password">
+                Placeholder="Enter your Password"
+                   PlaceholderColor="White">|
 
-            </Entry>
+                </Entry>
+            </Grid>
             <ActivityIndicator>
                 
             </ActivityIndicator>
-
+             
             <Button
                 BackgroundColor="Crimson"
                 Text="login">
