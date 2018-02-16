@@ -5,36 +5,31 @@
              Title="Login">
     <ContentPage.Content>
         <StackLayout
-         BackgroundColor="Black"
+         BackgroundColor="AntiqueWhite"
          Padding="10,20,10,5">
             <Label
-                
-                FontSize="Large"
-                FontAttributes="Bold"
-                HorizontalOptions="Center"
-                Text="Lands">
-                
-             </Label>
+               FontSize="Large"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               Text="Lands">
+           </Label>
             <Image
                 Source="cia"
-                WidthRequest="200">
-                
-            </Image>
+                WidthRequest="10">
+           </Image>
             <Grid
                 Margin="0,20">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="2*"/>
                 </Grid.ColumnDefinitions>
-            
             <Label 
                 Grid.Row="0"
                 Grid.Column="0"
                 Text="E-Mail"
                 TextColor="White">
             </Label>
-
-                <Entry
+            <Entry
                Grid.Row="0"
                Grid.Column="1"
                Keyboard="Email"
@@ -47,28 +42,30 @@
                 Grid.Row="1"
                 Grid.Column="0"
                 Text="Password"
-                    TextColor="White">
-                </Label>
+                TextColor="White">
+             </Label>
             <Entry
                 Grid.Row="1"
                 Grid.Column="1"
                 IsPassword="True"
                 Placeholder="Enter your Password"
-                   PlaceholderColor="White">|
-
-                </Entry>
-            </Grid>
+                PlaceholderColor="White">|
+             </Entry>
+             </Grid>
+           
+            
             <ActivityIndicator>
                 
             </ActivityIndicator>
-             
+            
+                Margin="40,0">
             <Button
                 BackgroundColor="Crimson"
-                Text="login">
+                Text="login"
+                BorderRadius="23"
+                HeightRequest="46">
                 
-            </Button>
-
-
-        </StackLayout>
+           </Button>
+    </StackLayout>
     </ContentPage.Content>
 </ContentPage>
