@@ -3,9 +3,10 @@
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Lands_1.views.LoginPage"
-    
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
              Title="Login">
     <ContentPage.Content>
+       
         <StackLayout
          BackgroundColor="AntiqueWhite"
          Padding="10,20,10,5">
@@ -70,22 +71,37 @@
                 
             </ActivityIndicator>
             <StackLayout
-                Margin="40,0">
+                Margin="70,0">
             <Button
                 BackgroundColor="Crimson"
                 Text="login"
-                BorderRadius="23"
-                HeightRequest="46">
+               >
            </Button>
-            <Button
+                <Button
                 BackgroundColor="Crimson"
-                Text="Register"
-                 BorderRadius="23"
-                HeightRequest="46">
-            </Button>
+                Text="Register">
+             </Button>
+            </StackLayout>
+            <StackLayout
+                HorizontalOptions="Center"
+                Orientation="Horizontal">
+                <Image
+                    WidthRequest="70"
+                    Source="facebook_logo">
+               </Image>
+                <Image
+                    WidthRequest="170"
+                    Source="twitter_logo">
+                </Image>
+                <Image
+                    WidthRequest="54"
+                    Source="instagram_logo">
+                </Image>
+
             </StackLayout>
 
 
         </StackLayout>
+       
     </ContentPage.Content>
 </ContentPage>
