@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage 
+             xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Lands_1.views.LoginPage"
+    
              Title="Login">
     <ContentPage.Content>
         <StackLayout
@@ -15,7 +17,7 @@
            </Label>
             <Image
                 Source="cia"
-                WidthRequest="10">
+                WidthRequest="150">
            </Image>
             <Grid
                 Margin="0,20">
@@ -52,20 +54,38 @@
                 PlaceholderColor="White">|
              </Entry>
              </Grid>
-           
+            <StackLayout
+                Orientation="Horizontal">
+                <Label
+                    HorizontalOptions="StartAndExpand"
+                Text="Rememberme on this device"
+                  VerticalOptions="Center">
+                </Label>
+                <Switch
+                    HorizontalOptions="End">
+                </Switch>
+            </StackLayout>
             
             <ActivityIndicator>
                 
             </ActivityIndicator>
-            
+            <StackLayout
                 Margin="40,0">
             <Button
                 BackgroundColor="Crimson"
                 Text="login"
                 BorderRadius="23"
                 HeightRequest="46">
-                
            </Button>
-    </StackLayout>
+            <Button
+                BackgroundColor="Crimson"
+                Text="Register"
+                 BorderRadius="23"
+                HeightRequest="46">
+            </Button>
+            </StackLayout>
+
+
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
