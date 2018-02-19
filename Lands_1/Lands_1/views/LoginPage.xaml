@@ -3,9 +3,10 @@
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Lands_1.views.LoginPage"
-             BindingContext="{Binding Main, Source={StaticResource Locator}}"
+              BindingContext="{Binding Main, Source={StaticResource Locator}}"
              Title="Login">
     <ContentPage.Content>
+        <ScrollView> 
        
         <StackLayout
          BackgroundColor="AntiqueWhite"
@@ -102,6 +103,6 @@
 
 
         </StackLayout>
-       
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

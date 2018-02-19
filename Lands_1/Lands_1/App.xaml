@@ -2,7 +2,7 @@
 <Application 
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-        xmlns:infra="clr-namespace:Lands_1.Infrastructure"
+    xmlns:infra="clr-namespace:Lands_1.Infrastructure"
     x:Class="Lands_1.App">
 	<Application.Resources>
 

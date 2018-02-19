@@ -1,11 +1,11 @@
-﻿
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-
-namespace Lands_1.infrastructure
+namespace Lands_1.Infrastructure
 {
     using ViewModels;
-
-    class InstanceLocator
+      class InstanceLocator
     {
         #region Properties
         public MainViewModel Main
